@@ -1,0 +1,24 @@
+.topbar{
+    background:#ff7a00;
+    color:white;
+    height:42px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:0 60px;
+
+    font-size:14px;
+    font-weight:500;
+}
+.topbar-right{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+@media (max-width: 600px) {
+  .topbar {
+    display: none;
+  }
+}

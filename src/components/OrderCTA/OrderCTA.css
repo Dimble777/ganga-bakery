@@ -1,0 +1,223 @@
+.order-cta {
+  position: relative;
+
+  padding: 110px 7%;
+
+  background:
+    linear-gradient(
+      rgba(48, 27, 12, 0.92),
+      rgba(48, 27, 12, 0.92)
+    );
+
+  overflow: hidden;
+
+  text-align: center;
+}
+
+
+/* Decorative border */
+
+.order-cta::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 22px;
+
+  border: 1px solid rgba(197, 138, 40, 0.45);
+
+  pointer-events: none;
+}
+
+
+/* Content */
+
+.order-cta-content {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 750px;
+
+  margin: auto;
+}
+
+
+/* Small heading */
+
+.order-cta-label {
+  margin: 0 0 14px;
+
+  color: #d5a23a;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+  letter-spacing: 4px;
+}
+
+
+/* Main heading */
+
+.order-cta h2 {
+  margin: 0;
+
+  color: #fff8ed;
+
+  font-family: "Bodoni Moda", serif;
+
+  font-size: 60px;
+
+  line-height: 1.15;
+
+  font-weight: 500;
+}
+
+
+/* Decorative line */
+
+.order-cta-line {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 14px;
+
+  margin: 25px auto;
+}
+
+.order-cta-line span {
+  width: 80px;
+
+  height: 1px;
+
+  background: #c58a28;
+}
+
+.order-cta-line strong {
+  color: #d5a23a;
+
+  font-size: 18px;
+}
+
+
+/* Description */
+
+.order-cta-text {
+  max-width: 600px;
+
+  margin: 0 auto;
+
+  color: #e5d8ca;
+
+  font-family: "Lato", sans-serif;
+
+  font-size: 16px;
+
+  line-height: 1.8;
+}
+
+
+/* Buttons */
+
+.order-cta-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 18px;
+
+  margin-top: 35px;
+}
+
+
+/* Order button */
+
+.cta-order-btn {
+  padding: 15px 34px;
+
+  border: none;
+
+  background: #c58a28;
+
+  color: white;
+
+  font-family: "Lato", sans-serif;
+
+  font-size: 14px;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.cta-order-btn:hover {
+  background: #e0aa45;
+
+  transform: translateY(-3px);
+}
+
+
+/* Contact button */
+
+.cta-contact-btn {
+  padding: 14px 34px;
+
+  border: 1px solid #c58a28;
+
+  background: transparent;
+
+  color: #f5dfbb;
+
+  font-family: "Lato", sans-serif;
+
+  font-size: 14px;
+
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.cta-contact-btn:hover {
+  background: #c58a28;
+
+  color: white;
+
+  transform: translateY(-3px);
+}
+
+
+/* Responsive */
+
+@media (max-width: 600px) {
+
+  .order-cta {
+    padding: 80px 5%;
+  }
+
+  .order-cta::before {
+    inset: 15px;
+  }
+
+  .order-cta h2 {
+    font-size: 42px;
+  }
+
+  .order-cta-buttons {
+    flex-direction: column;
+
+    align-items: center;
+  }
+
+  .cta-order-btn,
+  .cta-contact-btn {
+    width: 200px;
+  }
+}

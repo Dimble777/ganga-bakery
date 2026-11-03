@@ -1,0 +1,98 @@
+.admin-dashboard {
+  min-height: 100vh;
+  background: #fff8f2;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 50px;
+  background: white;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-header h1 {
+  margin: 0;
+  color: #ff7a00;
+}
+
+.admin-header p {
+  margin: 5px 0 0;
+  color: #777;
+}
+
+.admin-logout {
+  padding: 10px 20px;
+  border: 1px solid #ff7a00;
+  background: white;
+  color: #ff7a00;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.admin-content {
+  padding: 40px 50px;
+}
+
+.admin-content h2 {
+  margin-bottom: 5px;
+}
+
+.admin-subtitle {
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.admin-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.admin-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.admin-card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.admin-card p {
+  color: #777;
+  min-height: 45px;
+}
+
+.admin-card button {
+  margin-top: 15px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 6px;
+  background: #ff7a00;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .admin-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .admin-header {
+    padding: 20px;
+  }
+
+  .admin-content {
+    padding: 25px 20px;
+  }
+
+  .admin-cards {
+    grid-template-columns: 1fr;
+  }
+}

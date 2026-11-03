@@ -1,0 +1,162 @@
+.admin-categories {
+  min-height: 100vh;
+  padding: 30px 40px;
+  box-sizing: border-box;
+  background: #fff8f2;
+  color: #333;
+  font-family: "Lato", sans-serif;
+}
+
+.admin-categories-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee0d5;
+}
+
+.admin-categories-header h2 {
+  margin: 0;
+  color: #ff7a00;
+  font-family: "Bodoni Moda", Georgia, serif;
+  font-size: 30px;
+}
+
+.admin-categories-header > button {
+  padding: 10px 20px;
+  border: 1px solid #ff7a00;
+  border-radius: 6px;
+  background: white;
+  color: #ff7a00;
+  cursor: pointer;
+}
+
+.admin-categories-header > button:hover {
+  background: #ff7a00;
+  color: white;
+}
+
+.admin-categories > form {
+  display: flex;
+  gap: 15px;
+  max-width: 750px;
+  margin-bottom: 35px;
+}
+
+.admin-categories > form input {
+  flex: 1;
+  min-width: 0;
+  padding: 13px 15px;
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  background: white;
+  color: #333;
+  font-size: 15px;
+  outline: none;
+}
+
+.admin-categories > form input:focus {
+  border-color: #ff7a00;
+  box-shadow: 0 0 0 3px rgba(255, 122, 0, 0.12);
+}
+
+.admin-categories > form button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 7px;
+  background: #ff7a00;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.admin-categories > form button:hover {
+  background: #e66e00;
+}
+
+.admin-categories button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.category-list {
+  max-width: 900px;
+}
+
+.category-list h3 {
+  margin: 0 0 18px;
+  color: #44352b;
+  font-size: 21px;
+}
+
+.category-list > p {
+  padding: 20px;
+  border: 1px dashed #e5d5c7;
+  border-radius: 8px;
+  background: white;
+  color: #777;
+}
+
+.category-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 12px;
+  padding: 16px 20px;
+  border: 1px solid #eee2d8;
+  border-radius: 9px;
+  background: white;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.04);
+}
+
+.category-item span {
+  overflow-wrap: anywhere;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.category-item button {
+  flex-shrink: 0;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  background: #d9534f;
+  color: white;
+  cursor: pointer;
+}
+
+.category-item button:hover {
+  background: #c9302c;
+}
+
+@media (max-width: 600px) {
+  .admin-categories {
+    padding: 20px 15px;
+  }
+
+  .admin-categories-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .admin-categories-header h2 {
+    font-size: 26px;
+  }
+
+  .admin-categories > form {
+    flex-direction: column;
+  }
+
+  .admin-categories > form button {
+    width: 100%;
+  }
+
+  .category-item {
+    padding: 13px;
+  }
+}

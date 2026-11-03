@@ -1,0 +1,330 @@
+
+/* =========================
+   ADMIN OUTLETS
+========================= */
+
+.admin-outlets {
+  min-height: 100vh;
+  background: #fff8f2;
+  color: #2d211b;
+  font-family: "Lato", sans-serif;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.admin-outlets-header {
+  background: #ffffff;
+  border-bottom: 1px solid #eaded4;
+  padding: 24px 6%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.admin-outlets-header h1 {
+  margin: 0;
+  font-family: "Bodoni Moda", serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: #2d211b;
+}
+
+.admin-outlets-header p {
+  margin: 5px 0 0;
+  color: #9a7b68;
+  font-size: 13px;
+  letter-spacing: 1px;
+}
+
+.admin-outlets-back {
+  border: 1px solid #d8b79d;
+  background: transparent;
+  color: #6b4a35;
+  padding: 11px 18px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.25s ease;
+}
+
+.admin-outlets-back:hover {
+  background: #ff7a00;
+  border-color: #ff7a00;
+  color: #ffffff;
+}
+
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.admin-outlets-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 50px 30px 80px;
+}
+
+.admin-outlets-content h2 {
+  font-family: "Bodoni Moda", serif;
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 0 25px;
+  color: #2d211b;
+}
+
+
+/* =========================
+   ADD / EDIT SECTION
+========================= */
+
+.add-outlet-section {
+  background: #ffffff;
+  border: 1px solid #eaded4;
+  padding: 35px;
+  margin-bottom: 60px;
+  box-shadow: 0 10px 35px rgba(60, 35, 20, 0.05);
+}
+
+.add-outlet-section h2 {
+  margin-bottom: 30px;
+}
+
+
+/* =========================
+   FORM
+========================= */
+
+.add-outlet-section form {
+  max-width: 850px;
+}
+
+.outlet-input {
+  margin-bottom: 22px;
+}
+
+.outlet-input label {
+  display: block;
+  margin-bottom: 8px;
+  color: #5c4030;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.outlet-input input,
+.outlet-input textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  border: 1px solid #ded0c5;
+  background: #fffdfb;
+  color: #2d211b;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  outline: none;
+  transition: 0.25s ease;
+}
+
+.outlet-input textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.outlet-input input:focus,
+.outlet-input textarea:focus {
+  border-color: #ff7a00;
+  box-shadow: 0 0 0 3px rgba(255, 122, 0, 0.08);
+}
+
+
+/* =========================
+   IMAGE PREVIEW
+========================= */
+
+.outlet-input img {
+  display: block;
+  width: 220px;
+  height: 145px;
+  object-fit: cover;
+  margin-top: 12px;
+  border-radius: 4px;
+  border: 1px solid #eaded4;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+
+.add-outlet-section button[type="submit"] {
+  margin-top: 10px;
+  padding: 13px 25px;
+  border: 1px solid #ff7a00;
+  background: #ff7a00;
+  color: #ffffff;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.add-outlet-section button[type="submit"]:hover {
+  background: #e86d00;
+  border-color: #e86d00;
+}
+
+.add-outlet-section button[type="button"] {
+  margin-top: 10px;
+  padding: 13px 25px;
+  border: 1px solid #cdb9aa;
+  background: transparent;
+  color: #6b4a35;
+  cursor: pointer;
+}
+
+
+/* =========================
+   OUTLET LIST
+========================= */
+
+.outlet-list-section {
+  margin-top: 20px;
+}
+
+.outlet-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.outlet-card {
+  background: #ffffff;
+  border: 1px solid #eaded4;
+  padding: 22px;
+  box-shadow: 0 8px 25px rgba(60, 35, 20, 0.04);
+  transition: 0.25s ease;
+}
+
+.outlet-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(60, 35, 20, 0.08);
+}
+
+
+/* =========================
+   OUTLET IMAGE
+========================= */
+
+.outlet-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 3px;
+}
+
+
+/* =========================
+   OUTLET INFORMATION
+========================= */
+
+.outlet-info h3 {
+  margin: 0 0 15px;
+  font-family: "Bodoni Moda", serif;
+  font-size: 25px;
+  font-weight: 500;
+  color: #2d211b;
+}
+
+.outlet-info p {
+  margin: 8px 0;
+  color: #756256;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   LINKS
+========================= */
+
+.outlet-info a {
+  color: #ff7a00;
+  text-decoration: none;
+}
+
+.outlet-info a:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.outlet-card button {
+  margin-top: 18px;
+  padding: 9px 17px;
+  border: 1px solid #d7c3b4;
+  background: transparent;
+  color: #5c4030;
+  cursor: pointer;
+  font-size: 13px;
+  transition: 0.25s ease;
+}
+
+.outlet-card button:hover {
+  background: #2d211b;
+  border-color: #2d211b;
+  color: #ffffff;
+}
+
+.outlet-card button + button {
+  margin-left: 10px;
+}
+
+.outlet-card button:last-child {
+  color: #b34b36;
+  border-color: #dcb4aa;
+}
+
+.outlet-card button:last-child:hover {
+  background: #b34b36;
+  border-color: #b34b36;
+  color: #ffffff;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 800px) {
+
+  .admin-outlets-header {
+    padding: 20px;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .admin-outlets-content {
+    padding: 35px 18px 60px;
+  }
+
+  .add-outlet-section {
+    padding: 25px 20px;
+  }
+
+  .outlet-list {
+    grid-template-columns: 1fr;
+  }
+
+  .outlet-card img {
+    height: 220px;
+  }
+
+}
+
